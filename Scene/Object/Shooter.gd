@@ -9,17 +9,19 @@ func reparent(node,new_parent):
 var ball_scene = preload("res://Scene/Object/Ball.tscn")
 var ball_instance
 func _process(delta):
-	look_at(get_global_mouse_position())
-	if shooting_point.get_child_count()==0:
-		ball_instance = ball_scene.instance()
-		ball_instance.position = shooting_point.position
-		shooting_point.add_child(ball_instance)
+	var mouse_position = get_global_mouse_position()
+	look_at(mouse_position)
+	#if shooting_point.get_child_count()==0:
 	if Input.is_action_just_pressed("left_mouse"):
-		reparent(ball_instance,self)
-		ball_instance.position = shooting_point.position
+		#reparent(ball_instance,Utils.levelgame.bullets)
+		
+		ball_instance = ball_scene.instance()
+		Utils.levelgame.bullets.add_child(ball_instance)
+		ball_instance.position = shooting_point.global_position
 #		var test:RigidBody2D = ball_instance.rigidbody
 #		test.linear_velocity
-		ball_instance.rigidbody.linear_velocity = Vector2(100,-100)
+		var direction = (mouse_position - position).normalized()
+		ball_instance.rigidbody.linear_velocity = direction*200
 		
 
 
