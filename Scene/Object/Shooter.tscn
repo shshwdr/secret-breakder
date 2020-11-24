@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scene/Object/Shooter.gd" type="Script" id=1]
+[ext_resource path="res://art/canno.png" type="Texture" id=2]
+
+[node name="Shooter" type="Node2D"]
+position = Vector2( 0, 0.749146 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 9.54594, -0.176788 )
+texture = ExtResource( 2 )
+
+[node name="shootingPoint" type="Position2D" parent="."]
+position = Vector2( 24.8651, -0.297287 )
