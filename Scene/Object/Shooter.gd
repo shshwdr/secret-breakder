@@ -2,6 +2,8 @@ extends Node2D
 
 onready var shooting_point = $shootingPoint
 
+export var ball_speed = 300
+
 func reparent(node,new_parent):
   node.get_parent().remove_child(node) # error here  
   new_parent.add_child(node) 
@@ -21,7 +23,7 @@ func _process(delta):
 #		var test:RigidBody2D = ball_instance.rigidbody
 #		test.linear_velocity
 		var direction = (mouse_position - position).normalized()
-		ball_instance.rigidbody.linear_velocity = direction*200
+		ball_instance.rigidbody.linear_velocity = direction*ball_speed
 		
 
 

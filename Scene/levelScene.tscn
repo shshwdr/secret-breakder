@@ -10,3 +10,8 @@ script = ExtResource( 2 )
 position = Vector2( 203.87, 288.072 )
 
 [node name="bullets" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 0, 0, 320, 0, 320, 320, 352, 320, 352, -32, -32, -32, -32, 320, 0, 320 )
