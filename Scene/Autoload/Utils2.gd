@@ -2,6 +2,17 @@ extends Node
 
 var tile_length = 32
 
+
+var player_health = 100
+var player_attack = 1
+
+func get_player_attack():
+	return player_attack
+
+func attack_player(minus):
+	player_health-=minus
+	Events.emit_signal("update_health")
+
 var half_tile_size = Vector2(tile_length/2,tile_length/2)
 var rng:RandomNumberGenerator = RandomNumberGenerator.new()
 var maingame

@@ -23,7 +23,7 @@ func _process(delta):
 #		var test:RigidBody2D = ball_instance.rigidbody
 #		test.linear_velocity
 		var direction = (mouse_position - position).normalized()
-		ball_instance.rigidbody.linear_velocity = direction*ball_speed
+		ball_instance.linear_velocity = direction*ball_speed
 		
 
 
