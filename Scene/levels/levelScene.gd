@@ -3,6 +3,7 @@ extends Node2D
 onready var bullets = $bullets
 onready var bricks = $bricks
 onready var level_ending_node = $level_ending
+onready var level_ending_label = $level_ending/ColorRect/RichTextLabel
 
 func level_end():
 	#stop bullets
@@ -17,6 +18,7 @@ func _ready():
 	for brick in bricks.get_children():
 		if brick.get("is_monster"):
 			brick.update_UI()
+	level_ending_label.bbcode_text = LevelManager.get_level_info().content
 	
 
 func has_monster_except(excepts):

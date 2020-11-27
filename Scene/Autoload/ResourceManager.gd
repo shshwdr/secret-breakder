@@ -1,16 +1,13 @@
 extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var descriptions
+var resource_folder = "res://resources"
+var description_file = "description"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	load_descripts_info()
+	
+func load_descripts_info():
+	var file_path = '%s/%s.json' % [resource_folder, description_file]
+	descriptions = Utils.load_json(file_path)

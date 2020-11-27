@@ -29,6 +29,7 @@ config/icon="res://icon.png"
 Utils="*res://Scene/Autoload/Utils2.gd"
 Events="*res://Scene/Autoload/Events.gd"
 LevelManager="*res://Scene/Autoload/LevelManager.gd"
+ResourceManager="*res://Scene/Autoload/ResourceManager.gd"
 
 [display]
 

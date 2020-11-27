@@ -1,0 +1,14 @@
+{
+    "Brick_target": {
+        "human_type":[],
+        "target_height":4,
+        "content":"The target, hit it to finish level.",
+    },
+    "Brick":{
+        "content":"A brick, hit it to destroy it.",
+    },
+    "Brick_unbreakable":{
+        "content":"A brick that cannot be break",
+    }
+    
+}

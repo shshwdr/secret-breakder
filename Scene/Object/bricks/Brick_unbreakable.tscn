@@ -3,7 +3,7 @@
 [ext_resource path="res://Scene/Object/bricks/brick.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Object/bricks/Brick_unbreakable.gd" type="Script" id=2]
 
-[sub_resource type="Shader" id=3]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -20,15 +20,15 @@ void fragment() {
 	}
 }"
 
-[sub_resource type="ShaderMaterial" id=4]
+[sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 3 )
+shader = SubResource( 1 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_unbreakable" instance=ExtResource( 1 )]
-material = SubResource( 4 )
+material = SubResource( 2 )
 script = ExtResource( 2 )
 description = "A brick you cannot destroy."
 
 [node name="sprite" parent="." index="0"]
-material = SubResource( 4 )
+material = SubResource( 2 )

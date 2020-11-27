@@ -2,7 +2,7 @@ extends Node
 
 var level_infos
 var current_level = 0
-var level_folder = "res://resources/level"
+var level_folder = "res://resources"
 
 var level_jump_height = 20
 

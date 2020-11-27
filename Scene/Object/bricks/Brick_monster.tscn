@@ -52,6 +52,3 @@ text = "0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Label" parent="." index="5"]
-text = "A monster, if you hit it, it would hit back(if it is alive"
