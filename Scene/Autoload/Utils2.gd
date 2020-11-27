@@ -2,7 +2,7 @@ extends Node
 
 var tile_length = 32
 
-
+var player_max_health = 100
 var player_health = 100
 var player_attack = 1
 var is_game_paused = false
@@ -12,6 +12,9 @@ func get_player_attack():
 
 func attack_player(minus):
 	player_health-=minus
+	player_health = min(player_max_health, player_health)
+	if player_health<=0:
+		print("game end")
 	Events.emit_signal("update_health")
 
 var half_tile_size = Vector2(tile_length/2,tile_length/2)

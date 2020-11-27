@@ -7,8 +7,12 @@ export var description = "A brick, hit it once to destroy it."
 
 func _ready():
 	label_node.visible = false
-	print("name ",name)
-	label.text = ResourceManager.descriptions[name].content
+	var length1 = "res://Scene/Object/bricks/".length()
+	var script_path = get_script().get_path()
+	var length2 = script_path.length() - length1 - 3
+	var script_name = script_path.substr(length1, length2)
+	print("name ",script_name)
+	label.text = ResourceManager.descriptions[script_name].content
 	#label
 	#label.text = description
 

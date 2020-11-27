@@ -4,11 +4,17 @@
         "target_height":4,
         "content":"The target, hit it to finish level.",
     },
-    "Brick":{
+    "brick":{
         "content":"A brick, hit it to destroy it.",
     },
     "Brick_unbreakable":{
         "content":"A brick that cannot be break",
+    },
+    "Brick_monster":{
+        "content":"Anxiety, it would damage on you when you hit it(if it is not destroyed)",
+    },
+    "Brick_heal":{
+        "content":"Hit to heal",
     }
     
 }
