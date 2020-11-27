@@ -11,6 +11,8 @@ func reparent(node,new_parent):
 var ball_scene = preload("res://Scene/Object/Ball.tscn")
 var ball_instance
 func _process(delta):
+	if Utils.is_game_paused:
+		return
 	var mouse_position = get_global_mouse_position()
 	look_at(mouse_position)
 	#if shooting_point.get_child_count()==0:

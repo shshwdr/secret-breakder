@@ -21,13 +21,14 @@ _global_script_class_icons={
 [application]
 
 config/name="secrets breaker"
-run/main_scene="res://Scene/levels/level1.tscn"
+run/main_scene="res://Scene/levels/level0.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Utils="*res://Scene/Autoload/Utils2.gd"
 Events="*res://Scene/Autoload/Events.gd"
+LevelManager="*res://Scene/Autoload/LevelManager.gd"
 
 [display]
 

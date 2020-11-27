@@ -1,0 +1,77 @@
+[
+    {
+        "human_type":[],
+        "target_height":4,
+        "content":"This is Amy. Later, the newspapers would call fifteen-year-old Amy Stevenson a 'ray of sunshine', with 'everything to live for'. But now she is just a ordinary girl. Her headphones buzzed with rock and pop as she trudged the long way home, rucksack sagging.",
+    },
+    {
+        "name":"The Simplest Task",
+        "human_type":[1],
+        "target_height":4,
+        "content":"Amy had a boyfriend, Jake. He loved her and she loved him. They had been together for nearly eight months, walking the romance route around the 'top field' at school during break time, hot hand in hot hand, fast hearts synchronised. Nothing can break them apart.",
+        "moon_behavior":"sleep",
+    },
+    {
+        "name":"Shot for Moonshot",
+        "human_type":[0,1],
+        "target_height":6,
+        "content":"Amy had two best friends: Jenny and Becky. The trio danced in a perpetual whirlpool of back stories, competition and gossip. Dizzying trails of 'she-said-he-said-she-said' preceded remorseful, sobbing hugs at the end of every drunken Saturday night.",
+        "moon_behavior":"normal",
+    },
+    {
+        "name":"A Ladder for Human Ladder",
+        "human_type":[30,14,10],
+        "target_height":8,
+        "moon_type":"The previous day she'd got back early and startled Bob in the kitchen as he stirred Coffee Mate into his favourite mug. At first he'd smiled, opening his arms for a hug before realising that she'd made it back in record time and must have gone across the field.\nShe'd had to sit through half an hour of Bob's ranting and raving about walking the safe route home, along the roads: 'I'm saying this because I love you, Ames, we both love you and we just want you to be safe.'",
+        "moon_behavior":"normal",
+    },
+    {
+        "name":"A Lunatic Luna",
+        "human_type":[25,14,10,10],
+        "target_height":8,
+        "moon_type":"Amy hated learning French with a passion, the teacher was a dick and who needs to give a window a gender? But she liked the idea of knowing the language. French was a sexy language. She imagined she could seduce someone a bit more sophisticated than Jake by whispering something French in his ear. She could seduce someone older. Someone a lot older.",
+        "moon_behavior":"normal",
+        "is_powerful":true,
+    },
+    {
+        "name":"Thunder under Thunder Moon",
+        "human_type":[10,14,10,10,14],
+        "target_height":9,
+        "moon_type":"She loved Jake, of course, she meant it when she said it. She had his name carefully stencilled onto her bag with a Tippex pen and when she imagined the future, he was in it. But over the last few weeks she had begun to see the differences between them more and more.\nJake, with his wide smile and deep brown puppy-dog eyes, was so easy to spend time with, so gentle. But in the time they'd been going out, he'd barely plucked up the courage to put his hand inside her school shirt. They spent whole lunch hours kissing in the top field, and one time he'd climbed on top of her but she'd got a dead leg and had to move and he was so flustered he barely spoke for the rest of the day.",
+        "moon_behavior":"normal",
+        "is_powerful":true,
+        "has_thunder":true,
+    },
+    {
+        "name":"You are not Helping Hati!",
+        "human_type":[10,14,10,10,14],
+        "target_height":10,
+        "moon_type":"It had been months and months and she was still a virgin. It was getting embarrassing. She hated the idea of being last, hated losing at anything.",
+        "moon_behavior":"normal",
+        "is_powerful":true,
+        "has_thunder":true,
+        "hide":true,
+    },
+    {
+        "content":"Jake's mum, Sue, didn't like Amy. It was like she saw her as someone who would corrupt her precious baby. Amy liked the idea that she was some kind of scarlet woman. She liked the idea of being any kind of woman."
+    },
+    {
+        "content":"Amy Stevenson had a secret. A secret that made her stomach lurch and her heart thump. None of Amy's friends knew about her secret, and Jake certainly didn't know. Jake could never know. Even Jake's mum, with her disapproving looks, would never have guessed.\nAmy's secret was older. Absolutely, categorically a man. His shoulders were broader than Jake's, his voice lower, and when he made rude remarks, they came from a mouth that had earned the right to make them. He was tall and walked with confidence, never in a rush."
+    },
+    {
+        "content":"Her secret wore aftershave, not Lynx, and he drove a car, not a bike. Unlike Jake's sandy curtains, he had thick, dark hair. A man's cut. She had seen through his shirts that there was dark hair in the shallow dip at the centre of his chest. Her secret had a tall, dark shadow.\nWhen Amy thought about him, her nerves exploded and her head filled with a bright white sound that shut out any sense."
+    }
+    ,
+    {
+        "content":"Her secret touched her waist like a man touches a woman. He opened doors for her, unlike the boys in her class who bowled into corridors like silver balls in a pinball machine."
+    }
+    ,
+    {
+        "content":""
+    }
+    ,
+    {
+        "content":""
+    }
+    
+]

@@ -5,6 +5,7 @@ var tile_length = 32
 
 var player_health = 100
 var player_attack = 1
+var is_game_paused = false
 
 func get_player_attack():
 	return player_attack
