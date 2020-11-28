@@ -2,7 +2,7 @@
     {
         "level":0,
         "target_sprite":"res://art/girl.png",
-        "content":"This is [color=red]Amy[/color]. \nLater, the newspapers would call fifteen-year-old Amy Stevenson a 'ray of sunshine', with 'everything to live for'. \nBut now she is just a ordinary girl. Her headphones buzzed with rock and pop as she trudged the long way home, rucksack sagging.",
+        "content":"This is [color=red]Amy[/color]. \nLater, [color=red]the newspapers[/color] would call fifteen-year-old Amy Stevenson a 'ray of sunshine', with 'everything to live for'. \nBut now she is just a ordinary girl. Her headphones buzzed with rock and pop as she trudged the long way home, rucksack sagging.",
     },
     {
         "level":1,
@@ -13,7 +13,7 @@
     {
         "level":2,
         "target_sprite":"res://art/another_girls.png",
-        "content":"Amy had two best friends: Jenny and Becky. The trio danced in a perpetual whirlpool of back stories, competition and gossip. Dizzying trails of 'she-said-he-said-she-said' preceded remorseful, sobbing hugs at the end of every drunken Saturday night.",
+        "content":"Amy had two best friends: [color=red]Jenny and Becky[/color]. The trio danced in a perpetual whirlpool of back stories, competition and gossip. Dizzying trails of 'she-said-he-said-she-said' preceded remorseful, sobbing hugs at the end of every drunken Saturday night.",
     },
     {
         "level":3,
@@ -24,7 +24,7 @@
     {
         "level":4,
         "target_sprite":"res://art/question.png",
-        "content":"Amy Stevenson had a secret. A secret that made her stomach lurch and her heart thump. None of Amy's friends knew about her secret, and Jake certainly didn't know. Jake could never know. Even Jake's mum, with her disapproving looks, would never have guessed.\nAmy's secret was older. Absolutely, categorically a man. His shoulders were broader than Jake's, his voice lower, and when he made rude remarks, they came from a mouth that had earned the right to make them. He was tall and walked with confidence, never in a rush."
+        "content":"Amy Stevenson had a [color=red]secret[/color]. A secret that made her stomach lurch and her heart thump. None of Amy's friends knew about her secret, and Jake certainly didn't know. Jake could never know. Even Jake's mum, with her disapproving looks, would never have guessed.\nAmy's secret was older. Absolutely, categorically a man. His shoulders were broader than Jake's, his voice lower, and when he made rude remarks, they came from a mouth that had earned the right to make them. He was tall and walked with confidence, never in a rush."
     },
     {
         "level":5,
@@ -36,35 +36,18 @@
         "level":6,
         "target_sprite":"res://art/girl.png",
         "content":"Amy knew that he would have to stay a secret, and a short-lived one at that. A comma in her story, nothing more. She knew that she should keep it all locked in a box; perfect, complete, private, totally separate from the rest of her soundtrack.\nThat kiss in the kitchen, with the sounds of the others right outside. His hands on her face, a tickle of stubble that she'd never felt before. That one tiny kiss that kept her awake at night. "
-    }
-    ,
-    {
-        "level":7,
-        "target_sprite":"res://art/girl.png",
-        "content":"Amy turned into Warlingham Road and the ritual began. She saw Bob's van in the road. Amy was twelve doors away from home. As she squinted, she could make out a figure walking towards her."
-    },
-    {
-        "level":8,
-        "target_sprite":"res://art/girl.png",
-        "content":"When Amy realised who it was she felt a rush of nausea.\nHad anyone seen him?\nHad Bob seen him?\nHow could he risk coming to the house?\nAbove everything, Amy felt a burst of exhilaration and adrenalin thrusting her towards him like iron filings to a magnet."
-    },
-    {
-        "level":9,
-        "target_sprite":"res://art/question.png",
-        "content":"'Hello, Amy,' he said, still smiling. His green eyes twinkled, the lashes so dark they looked wet. 'I have a surprise for you... get in.' He gestured to his car - a Ford Escort the colour of a fox - and opened the door grandly like a chauffeur.",
-        "is_end":true,
     },
     
     
     {
         "level":10,
         "target_sprite":"res://art/alex.png",
-        "content":"Alex Dale had written about premature babies, their seconds-long lives as fragile as a pile of gold dust.\nShe had written about degenerative diseases and machine-dependents whose futures lay in the idle flick of a button. She had even detailed every knife-twist of her own mother's demise, but these patients in front of her were experiencing a very different living death."
+        "content":"[color=red]Alex Dale[/color] had written about premature babies, their seconds-long lives as fragile as a pile of gold dust.\nShe had written about degenerative diseases and machine-dependents whose futures lay in the idle flick of a button. She had even detailed every knife-twist of her own mother's demise, but these patients in front of her were experiencing a very different living death."
     },
     {
         "level":11,
         "target_sprite":"res://art/nurse.png",
-        "content":"'For years patients like this were all written off,' said the auburn-haired ward manager with the deepest crow's feet Alex had ever seen. 'They used to be called vegetables.' She paused and sighed. 'A lot of people still call them that.'\nAlex nodded, using scrappy shorthand to record the conversation in her Moleskine pad.\nThe ward manager continued. 'But the thing is, they're not all the same and they shouldn't be written off. They're individuals. Some of them are completely lacking awareness, but others are actually minimally conscious, and that's a world apart from being brain dead.'"
+        "content":"'For years patients like this were all written off,' said the auburn-haired ward manager with the deepest crow's feet Alex had ever seen. 'They used to be called [color=red]vegetables[/color].' She paused and sighed. 'A lot of people still call them that.'\nAlex nodded, using scrappy shorthand to record the conversation in her Moleskine pad.\nThe ward manager continued. 'But the thing is, they're not all the same and they shouldn't be written off. They're individuals. Some of them are completely lacking awareness, but others are [color=red]actually minimally conscious[/color], and that's a world apart from being brain dead.'"
     },
     {
         "level":12,
@@ -72,39 +55,14 @@
         "content":"Alex was shown around the ward. Most of the patients were at least middle-aged but the cubicle in the corner had a queasy sense of youth."
     },
     {
-        "level":18,
+        "level":13,
         "target_sprite":"res://art/amy.png",
-        "content":"As soon as Alex let her eyes fall on the full flesh of the woman's face, she recoiled.\nAlex knew this woman."
+        "content":"As soon as Alex let her eyes fall on the full flesh of the woman's face, she recoiled.\n[color=red]Alex knew this woman."
     },
     {
-        "level":19,
+        "level":14,
         "target_sprite":"res://art/alex.png",
-        "content":"Alex span to look at her guide. 'Is this..?'\n'Yes it is. I wondered if you'd recognise her. You must have been very young.'\n'I was the same age. I mean, I am the same age.'"
+        "content":"Alex span to look at her guide. 'Is this..?'\n'Yes it is. I wondered if you'd recognise her. You must have been very young.'\n'[color=red]I was the same age.[/color] I mean, I am the same age.'"
     },
-    {
-        "level":20,
-        "target_sprite":"res://art/nurse.png",
-        "content":"'How long has she been in?'\nThe manager looked at the woman in the bed and sat down lightly on the sheets near the crook of an elbow.\n'Almost since,' she said quietly."
-    },
-    {
-        "level":21,
-        "target_sprite":"res://art/alex.png",
-        "content":"Alex drove slowly into orange sunlight, blinking heavily. Amy Stevenson. The woman in the bed. Still fifteen, with her Britpop posters, ragged hair and girlish eyes."
-    },
-    {
-        "level":22,
-        "target_sprite":"res://art/alex.png",
-        "content":"Alex couldn't shake the thought of Amy. Amy Stevenson who left school one day and never made it home. Missing Amy. TV-friendly tragic teen in her school uniform; smiling school photo beaming out from every national news programme; Amy's sobbing mother and anxious father, or was it step-father? Huddles of her school friends having a 'special assembly' at school, captured for the evening news."
-    },
-    {
-        "level":23,
-        "target_sprite":"res://art/girl_close_eye.png",
-        "content":"From what Alex could remember, Amy's body was found a few days later. The manhunt had dominated the news for months, or was it weeks? Alex had been the same age as Amy, and remembered the shock of realising she wasn't invincible."
-    },
-    {
-        "level":24,
-        "target_sprite":"res://art/alex.png",
-        "content":"She'd grown up thirty minutes away from Amy. She could have been plucked from the street at any time, by anyone, in broad daylight."
-    }
     
 ]

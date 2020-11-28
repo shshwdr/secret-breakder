@@ -18,6 +18,7 @@ func _ready():
 			is_unlocked = true
 			var stage_button_instance = stage_button.instance()
 			stage_button_instance.text = stage.name
+			stage_button_instance.start_level = start_level
 			add_child(stage_button_instance)
 		
 	if is_unlocked:
