@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://effects/damage_shader.tres" type="Material" id=1]
-[ext_resource path="res://art/dinosaur.png" type="Texture" id=2]
+[ext_resource path="res://art/tile_cover_revealable.png" type="Texture" id=2]
 [ext_resource path="res://Scene/Object/bricks/brick.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]

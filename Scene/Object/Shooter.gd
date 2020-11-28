@@ -18,7 +18,7 @@ func _process(delta):
 	#if shooting_point.get_child_count()==0:
 	if Input.is_action_just_pressed("left_mouse"):
 		#reparent(ball_instance,Utils.levelgame.bullets)
-		
+		Events.emit_signal("shoot_ball")
 		ball_instance = ball_scene.instance()
 		Utils.levelgame.bullets.add_child(ball_instance)
 		ball_instance.position = shooting_point.global_position

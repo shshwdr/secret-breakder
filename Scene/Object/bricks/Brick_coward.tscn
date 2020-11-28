@@ -3,7 +3,7 @@
 [ext_resource path="res://Scene/Object/bricks/Brick_monster.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Object/bricks/Brick_coward.gd" type="Script" id=2]
 
-[sub_resource type="Shader" id=1]
+[sub_resource type="Shader" id=6]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -22,7 +22,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 1 )
+shader = SubResource( 6 )
 shader_param/changeColorRatio = 0.0
 
 [sub_resource type="RectangleShape2D" id=3]

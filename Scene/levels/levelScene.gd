@@ -4,6 +4,9 @@ onready var bullets = $bullets
 onready var bricks = $bricks
 onready var level_ending_node = $level_ending
 onready var level_ending_label = $level_ending/ColorRect/RichTextLabel
+onready var target = $bricks/Brick_target
+
+export var current_level:int
 
 func level_end():
 	#stop bullets
@@ -14,12 +17,13 @@ func level_end():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	LevelManager.current_level = current_level
 	Utils.levelgame = self
 	for brick in bricks.get_children():
 		if brick.get("is_monster"):
 			brick.update_UI()
 	level_ending_label.bbcode_text = LevelManager.get_level_info().content
-	
+	target.sprite.texture = load(LevelManager.get_level_info().target_sprite)
 
 func has_monster_except(excepts):
 	for brick in bricks.get_children():

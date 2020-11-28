@@ -31,6 +31,10 @@ func _ready():
 	update_UI()
 	Events.connect("brick_die",self,"on_brick_die")
 
+
+func do_damage():
+	Utils.attack_player(get_attack())
+
 func collide_with_ball(ball):
 	health -= Utils.get_player_attack()
 	if health<=0:
@@ -42,6 +46,6 @@ func collide_with_ball(ball):
 	var ratio = (max_health - health) / float(max_health - 1)
 	sprite.material.set_shader_param("changeColorRatio",ratio)
 	
-	Utils.attack_player(get_attack())
+	do_damage()
 	update_UI()
 

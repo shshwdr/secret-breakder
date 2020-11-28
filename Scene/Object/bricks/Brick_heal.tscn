@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scene/Object/bricks/brick.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Object/bricks/Brick_heal.gd" type="Script" id=2]
+[ext_resource path="res://art/heart.png" type="Texture" id=3]
 
-[sub_resource type="Shader" id=8]
+[sub_resource type="Shader" id=15]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -22,7 +23,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=9]
 resource_local_to_scene = true
-shader = SubResource( 8 )
+shader = SubResource( 15 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_heal" instance=ExtResource( 1 )]
@@ -32,3 +33,4 @@ heal_value = 3
 
 [node name="sprite" parent="." index="0"]
 material = SubResource( 9 )
+texture = ExtResource( 3 )

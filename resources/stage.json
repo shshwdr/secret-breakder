@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Amy",
+        "sprite":"res://art/girl.png",
+        "stages":[{"start_level":0,"name":"Secret"}]
+    },
+    {
+        "name":"Alex",
+        "sprite":"res://art/alex.png",
+        "stages":[{"start_level":10,"name":"Vegetables"}]
+    },
+]

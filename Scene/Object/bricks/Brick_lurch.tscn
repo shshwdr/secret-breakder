@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scene/Object/bricks/Brick_monster.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/Object/bricks/Brick_lurch.gd" type="Script" id=2]
+
+[sub_resource type="Shader" id=6]
+code = "shader_type canvas_item;
+
+uniform float changeColorRatio;
+
+void fragment() {
+	bool condition = UV.y<changeColorRatio;
+	if (condition){
+    	COLOR = texture(TEXTURE, UV);
+		//COLOR.r = 1.0;
+		COLOR.g = 0.0;
+		COLOR.b =0.0;
+	}else{
+		COLOR = texture(TEXTURE, UV);
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=7]
+resource_local_to_scene = true
+shader = SubResource( 6 )
+shader_param/changeColorRatio = 0.0
+
+[node name="Brick_lurch" instance=ExtResource( 1 )]
+material = SubResource( 7 )
+script = ExtResource( 2 )
+description = "A brick, hit it once to destroy it."
+
+[node name="sprite" parent="." index="0"]
+material = SubResource( 7 )
+
+[node name="period" type="Label" parent="." index="6"]
+margin_right = 32.0
+margin_bottom = 14.0
+text = "1"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

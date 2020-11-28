@@ -11,10 +11,16 @@
         "content":"A brick that cannot be break",
     },
     "Brick_monster":{
-        "content":"Anxiety, it would damage on you when you hit it(if it is not destroyed)",
+        "content":"Demon, it would damage on you when you hit it(if it is not destroyed)",
     },
     "Brick_heal":{
         "content":"Hit to heal",
+    },
+    "Brick_stubborn":{
+        "content":"Sturbbon, a demon. its damage would double if there are other type of demon",
+    },
+    "Brick_lurch":{
+        "content":"Lurch, a demon. it would damage you periodically if not destroyed",
     }
     
 }

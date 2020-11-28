@@ -1,73 +1,128 @@
 [
     {
         "level":0,
+        "human_type":[],
+        "target_height":4,
         "target_sprite":"res://art/girl.png",
         "content":"This is [color=red]Amy[/color]. \nLater, the newspapers would call fifteen-year-old Amy Stevenson a 'ray of sunshine', with 'everything to live for'. \nBut now she is just a ordinary girl. Her headphones buzzed with rock and pop as she trudged the long way home, rucksack sagging.",
     },
     {
         "level":1,
+        "human_type":[1],
+        "target_height":4,
         "target_sprite":"res://art/boy.png",
         "content":"Amy had a boyfriend, [color=red]Jake[/color]. \nHe loved her and she loved him. They had been together for nearly eight months, walking the romance route around the 'top field' at school during break time, hot hand in hot hand, fast hearts synchronised. Nothing can break them apart.",
-
+        "moon_behavior":"sleep",
     },
     {
         "level":2,
+        "human_type":[0,1],
+        "target_height":6,
         "target_sprite":"res://art/another_girls.png",
         "content":"Amy had two best friends: Jenny and Becky. The trio danced in a perpetual whirlpool of back stories, competition and gossip. Dizzying trails of 'she-said-he-said-she-said' preceded remorseful, sobbing hugs at the end of every drunken Saturday night.",
+        "moon_behavior":"normal",
     },
     {
         "level":3,
+        "human_type":[30,14,10],
+        "target_height":8,
         "target_sprite":"res://art/step_father.png",
         "content":"The previous day Amy'd got back early and startled [color=red]Bob[/color], her step-father, in the kitchen as he stirred Coffee Mate into his favourite mug. \nAt first he'd smiled, opening his arms for a hug before realising that she'd made it back in record time and must have gone across the field.\nShe'd had to sit through half an hour of Bob's ranting and raving about walking the safe route home, along the roads: 'I'm saying this because I love you, Ames, we both love you and [color=red]we just want you to be safe.[/color]'",
-
+        "moon_behavior":"normal",
     },
     {
+        
         "level":4,
+        "name":"A Lunatic Luna",
+        "human_type":[25,14,10,10],
+        "target_height":8,
+        "target_sprite":"res://art/girl.png",
+        "content":"Amy hated learning French with a passion, the teacher was a dick and who needs to give a window a gender? But she liked the idea of knowing the language. French was a sexy language. She imagined she could seduce someone a bit more sophisticated than Jake by whispering something French in his ear. She could seduce someone older. Someone a lot older.",
+        "moon_behavior":"normal",
+        "is_powerful":true,
+    },
+    {
+        "level":5,
+        "name":"Thunder under Thunder Moon",
+        "human_type":[10,14,10,10,14],
+        "target_height":9,
+        "target_sprite":"res://art/boy.png",
+        "moon_type":"She loved Jake, of course, she meant it when she said it. She had his name carefully stencilled onto her bag with a Tippex pen and when she imagined the future, he was in it. But over the last few weeks she had begun to see the differences between them more and more.\nJake, with his wide smile and deep brown puppy-dog eyes, was so easy to spend time with, so gentle. But in the time they'd been going out, he'd barely plucked up the courage to put his hand inside her school shirt. They spent whole lunch hours kissing in the top field, and one time he'd climbed on top of her but she'd got a dead leg and had to move and he was so flustered he barely spoke for the rest of the day.",
+        "moon_behavior":"normal",
+        "is_powerful":true,
+        "has_thunder":true,
+    },
+    {
+        "level":6,
+        "name":"You are not Helping Hati!",
+        "human_type":[10,14,10,10,14],
+        "target_height":10,
+        "target_sprite":"res://art/boy.png",
+        "content":"It had been months and months and she was still a virgin. It was getting embarrassing. She hated the idea of being last, hated losing at anything.",
+        "moon_behavior":"normal",
+        "is_powerful":true,
+        "has_thunder":true,
+        "hide":true,
+    },
+    {
+        "level":7,
+        "target_sprite":"res://art/lady.png",
+        "content":"Jake's mum, Sue, didn't like Amy. It was like she saw her as someone who would corrupt her precious baby. Amy liked the idea that she was some kind of scarlet woman. She liked the idea of being any kind of woman."
+    },
+    {
+        "level":8,
         "target_sprite":"res://art/question.png",
         "content":"Amy Stevenson had a secret. A secret that made her stomach lurch and her heart thump. None of Amy's friends knew about her secret, and Jake certainly didn't know. Jake could never know. Even Jake's mum, with her disapproving looks, would never have guessed.\nAmy's secret was older. Absolutely, categorically a man. His shoulders were broader than Jake's, his voice lower, and when he made rude remarks, they came from a mouth that had earned the right to make them. He was tall and walked with confidence, never in a rush."
     },
     {
-        "level":5,
+        "level":9,
         "target_sprite":"res://art/question.png",
         "content":"Her secret wore aftershave, not Lynx, and he drove a car, not a bike. Unlike Jake's sandy curtains, he had thick, dark hair. A man's cut. She had seen through his shirts that there was dark hair in the shallow dip at the centre of his chest. Her secret had a tall, dark shadow.\nWhen Amy thought about him, her nerves exploded and her head filled with a bright white sound that shut out any sense."
     }
     ,
     {
-        "level":6,
+        "level":9,
         "target_sprite":"res://art/girl.png",
         "content":"Amy knew that he would have to stay a secret, and a short-lived one at that. A comma in her story, nothing more. She knew that she should keep it all locked in a box; perfect, complete, private, totally separate from the rest of her soundtrack.\nThat kiss in the kitchen, with the sounds of the others right outside. His hands on her face, a tickle of stubble that she'd never felt before. That one tiny kiss that kept her awake at night. "
     }
     ,
     {
-        "level":7,
+        "level":10,
         "target_sprite":"res://art/girl.png",
         "content":"Amy turned into Warlingham Road and the ritual began. She saw Bob's van in the road. Amy was twelve doors away from home. As she squinted, she could make out a figure walking towards her."
     },
     {
-        "level":8,
+        "level":11,
         "target_sprite":"res://art/girl.png",
         "content":"When Amy realised who it was she felt a rush of nausea.\nHad anyone seen him?\nHad Bob seen him?\nHow could he risk coming to the house?\nAbove everything, Amy felt a burst of exhilaration and adrenalin thrusting her towards him like iron filings to a magnet."
     },
     {
-        "level":9,
+        "level":12,
         "target_sprite":"res://art/question.png",
-        "content":"'Hello, Amy,' he said, still smiling. His green eyes twinkled, the lashes so dark they looked wet. 'I have a surprise for you... get in.' He gestured to his car - a Ford Escort the colour of a fox - and opened the door grandly like a chauffeur.",
-        "is_end":true,
+        "content":"'Hello, Amy,' he said, still smiling. His green eyes twinkled, the lashes so dark they looked wet. 'I have a surprise for you... get in.' He gestured to his car - a Ford Escort the colour of a fox - and opened the door grandly like a chauffeur."
     },
-    
-    
     {
-        "level":10,
+        "level":13,
+        "target_sprite":"res://art/step_father.png",
+        "content":"Amy looked around, 'I don't know if I should, my step-dad's probably watching.' As soon as her words were in the air, Amy heard a nearby front door, and ducked down behind the Escort. A little way up the pavement, Bob set his tool bag down with a grunt. He exhaled heavily as he fumbled for his keys and opened his van. He waddled around to the driver's seat, heaved himself up and drove away with a crunch of gears, the back of his van shaking like a wagging tail.\n As excited as Amy was, as ready as she was, a huge part of her wanted to sprint off up the road and jump into the van, safe and young again, asking Bob if she could do the gears."
+    },
+    {
+        "level":14,
+        "target_sprite":"res://art/question.png",
+        "content":"'Was that your step-father?' As she stood up and dusted herself down Amy nodded, wordless. 'Problem solved then. Get in.' He smiled an alligator smile. And that was that. Amy had no more excuses and she climbed into the car."
+    },
+    {
+        "level":15,
         "target_sprite":"res://art/alex.png",
         "content":"Alex Dale had written about premature babies, their seconds-long lives as fragile as a pile of gold dust.\nShe had written about degenerative diseases and machine-dependents whose futures lay in the idle flick of a button. She had even detailed every knife-twist of her own mother's demise, but these patients in front of her were experiencing a very different living death."
     },
     {
-        "level":11,
+        "level":16,
         "target_sprite":"res://art/nurse.png",
         "content":"'For years patients like this were all written off,' said the auburn-haired ward manager with the deepest crow's feet Alex had ever seen. 'They used to be called vegetables.' She paused and sighed. 'A lot of people still call them that.'\nAlex nodded, using scrappy shorthand to record the conversation in her Moleskine pad.\nThe ward manager continued. 'But the thing is, they're not all the same and they shouldn't be written off. They're individuals. Some of them are completely lacking awareness, but others are actually minimally conscious, and that's a world apart from being brain dead.'"
     },
     {
-        "level":12,
+        "level":17,
         "target_sprite":"res://art/alex.png",
         "content":"Alex was shown around the ward. Most of the patients were at least middle-aged but the cubicle in the corner had a queasy sense of youth."
     },

@@ -26,7 +26,7 @@ resource_local_to_scene = true
 shader = SubResource( 9 )
 shader_param/changeColorRatio = 0.0
 
-[sub_resource type="Shader" id=8]
+[sub_resource type="Shader" id=15]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -45,19 +45,20 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=13]
 resource_local_to_scene = true
-shader = SubResource( 8 )
+shader = SubResource( 15 )
 shader_param/changeColorRatio = 0.0
 
 [sub_resource type="ShaderMaterial" id=14]
 resource_local_to_scene = true
-shader = SubResource( 8 )
+shader = SubResource( 15 )
 shader_param/changeColorRatio = 0.0
 
 [node name="level" instance=ExtResource( 1 )]
+current_level = 1
 
 [node name="Brick_unbreakable" parent="bricks" index="0" instance=ExtResource( 6 )]
 material = SubResource( 10 )
-position = Vector2( 192, 96 )
+position = Vector2( 160, 96 )
 
 [node name="Brick_target" parent="bricks" index="1"]
 material = SubResource( 13 )
@@ -65,3 +66,15 @@ material = SubResource( 13 )
 [node name="Brick" parent="bricks" index="2" instance=ExtResource( 2 )]
 material = SubResource( 14 )
 position = Vector2( 96, 96 )
+
+[node name="Brick2" parent="bricks" index="3" instance=ExtResource( 2 )]
+material = SubResource( 14 )
+position = Vector2( 192, 96 )
+
+[node name="Brick3" parent="bricks" index="4" instance=ExtResource( 2 )]
+material = SubResource( 14 )
+position = Vector2( 224, 96 )
+
+[node name="Brick4" parent="bricks" index="5" instance=ExtResource( 2 )]
+material = SubResource( 14 )
+position = Vector2( 128, 96 )
