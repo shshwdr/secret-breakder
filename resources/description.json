@@ -30,7 +30,10 @@
     },
     "Brick_dying":{
         "content":"Dying, a demon. When other demon are hit, its health will decrease",
-    }
+    },
+    "Brick_dejavu":{
+        "content":"Dejavu, a demon. When other demon dead, resurrect it.(only triggered once for each monster)",
+    },
     
     
 }

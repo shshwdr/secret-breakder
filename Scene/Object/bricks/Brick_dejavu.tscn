@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://art/dejavu.png" type="Texture" id=1]
+[ext_resource path="res://Scene/Object/bricks/Brick_monster.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scene/Object/bricks/Brick_dejavu.gd" type="Script" id=3]
+
+[sub_resource type="Shader" id=11]
+code = "shader_type canvas_item;
+
+uniform float changeColorRatio;
+
+void fragment() {
+	bool condition = UV.y<changeColorRatio;
+	if (condition){
+    	COLOR = texture(TEXTURE, UV);
+		//COLOR.r = 1.0;
+		COLOR.g = 0.0;
+		COLOR.b =0.0;
+	}else{
+		COLOR = texture(TEXTURE, UV);
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=12]
+resource_local_to_scene = true
+shader = SubResource( 11 )
+shader_param/changeColorRatio = 0.0
+
+[node name="Brick_dejavu" instance=ExtResource( 2 )]
+material = SubResource( 12 )
+script = ExtResource( 3 )
+description = "A brick, hit it once to destroy it."
+max_health = 1
+monster_type = "dejavu"
+
+[node name="sprite" parent="." index="0"]
+material = SubResource( 12 )
+texture = ExtResource( 1 )

@@ -6,6 +6,7 @@ var health = 3
 export var attack = 1
 var is_dead = false
 var is_monster = true
+var has_resurrected = false
 
 
 onready var attack_label = $attack
@@ -42,20 +43,27 @@ func do_damage():
 	Utils.attack_player(get_attack())
 
 func check_death():
+	
 	if health<=0:
+		
 		is_dead = true
+		if Utils.levelgame.has_monster_by_type("dejavu") and not has_resurrected:
+			health = max_health
+			is_dead = false
+			has_resurrected = true
+			return
 		Events.emit_signal("brick_die",self)
 		queue_free()
-		return true
-	return false
+		return
+	return
 
 func collide_with_ball(ball):
 	Events.emit_signal("get_hit_by_ball",self)
 	health -= Utils.get_player_attack()
 	check_death()
 	
-	var ratio = (max_health - health) / float(max_health - 1)
-	sprite.material.set_shader_param("changeColorRatio",ratio)
+	#var ratio = (max_health - health) / float(max_health - 1)
+	#sprite.material.set_shader_param("changeColorRatio",ratio)
 	
 	do_damage()
 	update_UI()

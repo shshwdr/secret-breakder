@@ -8,13 +8,8 @@ extends "res://Scene/Object/bricks/Brick_monster.gd"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Events.connect("get_hit_by_ball",self,"on_get_hit_by_ball")
+	pass # Replace with function body.
 
-func on_get_hit_by_ball(brick):
-	if brick!=self:
-		health -= Utils.get_player_attack()
-		check_death()
-		update_UI()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

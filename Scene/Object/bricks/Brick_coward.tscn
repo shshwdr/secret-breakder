@@ -4,7 +4,7 @@
 [ext_resource path="res://Scene/Object/bricks/Brick_coward.gd" type="Script" id=2]
 [ext_resource path="res://art/stop.png" type="Texture" id=3]
 
-[sub_resource type="Shader" id=1]
+[sub_resource type="Shader" id=15]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -21,22 +21,23 @@ void fragment() {
 	}
 }"
 
-[sub_resource type="ShaderMaterial" id=2]
+[sub_resource type="ShaderMaterial" id=16]
 resource_local_to_scene = true
-shader = SubResource( 1 )
+shader = SubResource( 15 )
 shader_param/changeColorRatio = 0.0
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 16, 16 )
 
 [node name="Brick_coward" instance=ExtResource( 1 )]
-material = SubResource( 2 )
+material = SubResource( 16 )
 script = ExtResource( 2 )
 description = "monster "
+attack = 5
 
 [node name="sprite" parent="." index="0"]
-material = SubResource( 2 )
+material = SubResource( 16 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" parent="." index="1"]
-shape = SubResource( 3 )
+shape = SubResource( 17 )

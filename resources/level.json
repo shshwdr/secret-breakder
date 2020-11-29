@@ -58,7 +58,8 @@
     {
         "level":10,
         "target_sprite":"res://art/alex.png",
-        "content":"Alex span to look at her guide. 'Is this..?'\n'Yes it is. I wondered if you'd recognise her. You must have been very young.'\n'[color=red]I was the same age.[/color] I mean, I am the same age.'"
+        "content":"Alex span to look at her guide. 'Is this..?'\n'Yes it is. I wondered if you'd recognise her. You must have been very young.'\n'[color=red]I was the same age.[/color] I mean, I am the same age.'",
+        "is_end":true,
     },
 
 

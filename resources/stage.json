@@ -2,7 +2,9 @@
     {
         "name":"Amy",
         "sprite":"res://art/girl.png",
-        "stages":[{"start_level":0,"name":"Secret"}]
+        "stages":[{"start_level":0,"name":"Seduce"},
+            {"start_level":11,"name":"Secret"},
+        ]
     },
     {
         "name":"Alex",

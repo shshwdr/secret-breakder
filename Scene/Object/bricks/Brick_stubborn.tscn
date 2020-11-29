@@ -4,7 +4,7 @@
 [ext_resource path="res://Scene/Object/bricks/Brick_stubborn.gd" type="Script" id=2]
 [ext_resource path="res://art/stubborn.png" type="Texture" id=3]
 
-[sub_resource type="Shader" id=9]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -23,7 +23,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 9 )
+shader = SubResource( 1 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_stubborn" instance=ExtResource( 1 )]
@@ -44,9 +44,6 @@ __meta__ = {
 [node name="sprite" parent="." index="1"]
 material = SubResource( 2 )
 texture = ExtResource( 3 )
-
-[node name="CollisionShape2D" parent="." index="2"]
-visible = false
 [connection signal="mouse_entered" from="." to="." method="_on_Brick_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_Brick_mouse_exited"]
 [connection signal="mouse_entered" from="Control2" to="." method="_on_Control2_mouse_entered22"]
