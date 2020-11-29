@@ -66,29 +66,56 @@
     {
         "level":11,
         "target_sprite":"res://art/boy.png",
-        "content":"It had been months and months and she was still a virgin. It was getting embarrassing. She hated the idea of being last, hated losing at anything.",
-    },
-    {
-        "level":12,
-        "target_sprite":"res://art/lady.png",
-        "content":"Jake's mum, Sue, didn't like Amy. It was like she saw her as someone who would corrupt her precious baby. Amy liked the idea that she was some kind of scarlet woman. She liked the idea of being any kind of woman."
+        "content":"It had been months and months and she was still a [color=red]virgin[/color]. It was getting embarrassing. She hated the idea of [color=red]being last[/color], hated losing at anything.",
     },
         {
-        "level":13,
+        "level":12,
         "target_sprite":"res://art/question.png",
         "content":"Amy Stevenson had a [color=red]secret[/color]. A secret that made her stomach lurch and her heart thump. None of Amy's friends knew about her secret, and Jake certainly didn't know. Jake could never know. Even Jake's mum, with her disapproving looks, would never have guessed.\nAmy's secret was older. Absolutely, categorically a man. His shoulders were broader than Jake's, his voice lower, and when he made rude remarks, they came from a mouth that had earned the right to make them. He was tall and walked with confidence, never in a rush."
     },
     {
-        "level":14,
-        "target_sprite":"res://art/question.png",
-        "content":"Her secret wore aftershave, not Lynx, and he drove a car, not a bike. Unlike Jake's sandy curtains, he had thick, dark hair. A man's cut. She had seen through his shirts that there was dark hair in the shallow dip at the centre of his chest. Her secret had a tall, dark shadow.\nWhen Amy thought about him, her nerves exploded and her head filled with a bright white sound that shut out any sense."
-    }
-    ,
-    {
-        "level":15,
+        "level":13,
         "target_sprite":"res://art/girl.png",
         "content":"Amy knew that he would have to stay a secret, and a short-lived one at that. A comma in her story, nothing more. She knew that she should keep it all locked in a box; perfect, complete, private, totally separate from the rest of her soundtrack.\nThat kiss in the kitchen, with the sounds of the others right outside. His hands on her face, a tickle of stubble that she'd never felt before. That one tiny kiss that kept her awake at night. ",
         "is_end":true,
     },
+    {
+        "level":14,
+        "target_sprite":"res://art/girl.png",
+        "content":"Amy turned into Warlingham Road and the ritual began. She saw Bob's van in the road. Amy was twelve doors away from home. As she squinted, she could make out a figure walking towards her.\nWhen Amy realised who it was she felt a rush of nausea.\nHad anyone seen him?\nHad Bob seen him?\nHow could he risk coming to the house?\nAbove everything, Amy felt a burst of exhilaration and adrenalin thrusting her towards him like iron filings to a magnet."
+    },
+    {
+        "level":15,
+        "target_sprite":"res://art/question.png",
+        "content":"'Hello, Amy,' he said, still smiling. His green eyes twinkled, the lashes so dark they looked wet. 'I have a surprise for you... get in.' He gestured to his car - a Ford Escort the colour of a fox - and opened the door grandly like a chauffeur.",
+        "is_end":true,
+    },
+
+    {
+        "level":16,
+        "target_sprite":"res://art/nurse.png",
+        "content":"'How long has she been in?'Alex Asked.\nThe manager looked at the woman in the bed and sat down lightly on the sheets near the crook of an elbow.\n'Almost since,' she said quietly."
+    },
+    {
+        "level":17,
+        "target_sprite":"res://art/alex.png",
+        "content":"Alex drove slowly into orange sunlight, blinking heavily. \nAmy Stevenson. The woman in the bed. [color=red]Still fifteen[/color], with her Britpop posters, ragged hair and girlish eyes."
+    },
+    {
+        "level":18,
+        "target_sprite":"res://art/alex.png",
+        "content":"Alex couldn't shake the thought of Amy. [color=red]Amy Stevenson who left school one day and never made it home[/color]. \nMissing Amy. TV-friendly tragic teen in her school uniform; smiling school photo beaming out from every national news programme; Amy's sobbing mother and anxious father, or was it step-father? Huddles of her school friends having a 'special assembly' at school, captured for the evening news."
+    },
+    {
+        "level":19,
+        "target_sprite":"res://art/girl_close_eye.png",
+        "content":"From what Alex could remember, [color=red]Amy's body was found a few days later[/color]. The manhunt had dominated the news for months, or was it weeks? Alex had been the same age as Amy, and remembered the shock of realising she wasn't invincible."
+    },
+    {
+        "level":20,
+        "target_sprite":"res://art/alex.png",
+        "content":"She'd grown up thirty minutes away from Amy. She could have been plucked from the street at any time, [color=red]by anyone, in broad daylight.[/color]",
+        "is_end":true,
+    }
     
 ]

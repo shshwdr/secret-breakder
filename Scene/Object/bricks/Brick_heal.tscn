@@ -4,7 +4,7 @@
 [ext_resource path="res://Scene/Object/bricks/Brick_heal.gd" type="Script" id=2]
 [ext_resource path="res://art/heart.png" type="Texture" id=3]
 
-[sub_resource type="Shader" id=15]
+[sub_resource type="Shader" id=20]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -21,16 +21,16 @@ void fragment() {
 	}
 }"
 
-[sub_resource type="ShaderMaterial" id=9]
+[sub_resource type="ShaderMaterial" id=21]
 resource_local_to_scene = true
-shader = SubResource( 15 )
+shader = SubResource( 20 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_heal" instance=ExtResource( 1 )]
-material = SubResource( 9 )
+material = SubResource( 21 )
 script = ExtResource( 2 )
-heal_value = 3
+heal_value = 10
 
 [node name="sprite" parent="." index="0"]
-material = SubResource( 9 )
+material = SubResource( 21 )
 texture = ExtResource( 3 )

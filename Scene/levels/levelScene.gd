@@ -5,6 +5,7 @@ onready var bricks = $bricks
 onready var level_ending_node = $level_ending
 onready var level_ending_label = $level_ending/ColorRect/RichTextLabel
 onready var target = $bricks/Brick_target
+onready var ending_texture = $level_ending/ColorRect/ending_texture
 
 export var current_level:int
 
@@ -26,6 +27,8 @@ func _ready():
 			brick.update_UI()
 	level_ending_label.bbcode_text = LevelManager.get_level_info().content
 	target.sprite.texture = load(LevelManager.get_level_info().target_sprite)
+	
+	ending_texture.texture = load(LevelManager.get_level_info().target_sprite)
 
 func has_monster_except(excepts):
 	for brick in bricks.get_children():

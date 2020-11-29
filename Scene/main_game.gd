@@ -19,6 +19,10 @@ func _ready():
 		var character_column_instance = character_column.instance()
 		character_column_instance.init(character)
 		hbox.add_child(character_column_instance)
+	if LevelManager.unlocked_level == 21:
+		$sorry_label.visible = true
+	else:
+		$sorry_label.visible = false
 		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
