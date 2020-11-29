@@ -5,7 +5,7 @@
 [ext_resource path="res://Scene/UI.gd" type="Script" id=7]
 [ext_resource path="res://Scene/levels/levelScene.gd" type="Script" id=8]
 
-[sub_resource type="Shader" id=15]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -22,9 +22,9 @@ void fragment() {
 	}
 }"
 
-[sub_resource type="ShaderMaterial" id=10]
+[sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 15 )
+shader = SubResource( 1 )
 shader_param/changeColorRatio = 0.0
 
 [node name="level" type="Node2D"]
@@ -65,7 +65,7 @@ __meta__ = {
 [node name="bricks" type="Node2D" parent="."]
 
 [node name="Brick_target" parent="bricks" instance=ExtResource( 1 )]
-material = SubResource( 10 )
+material = SubResource( 2 )
 position = Vector2( 160, 0 )
 
 [node name="level_ending" type="Node2D" parent="."]
@@ -100,4 +100,8 @@ anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 352, 0, 0, 352, 0, 352, 352 )
+width = 5.0
 [connection signal="pressed" from="level_ending/ColorRect/Button" to="." method="_on_Button_pressed"]

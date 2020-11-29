@@ -11,7 +11,7 @@ func _ready():
 	var script_path = get_script().get_path()
 	var length2 = script_path.length() - length1 - 3
 	var script_name = script_path.substr(length1, length2)
-	print("name ",script_name)
+	#print("name ",script_name)
 	label.text = ResourceManager.descriptions[script_name].content
 	#label
 	#label.text = description

@@ -7,6 +7,6 @@
     {
         "name":"Alex",
         "sprite":"res://art/alex.png",
-        "stages":[{"start_level":10,"name":"Vegetables"}]
+        "stages":[{"start_level":6,"name":"Vegetables"}]
     },
 ]

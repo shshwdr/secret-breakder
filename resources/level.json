@@ -23,19 +23,15 @@
     },
     {
         "level":4,
-        "target_sprite":"res://art/question.png",
-        "content":"Amy Stevenson had a [color=red]secret[/color]. A secret that made her stomach lurch and her heart thump. None of Amy's friends knew about her secret, and Jake certainly didn't know. Jake could never know. Even Jake's mum, with her disapproving looks, would never have guessed.\nAmy's secret was older. Absolutely, categorically a man. His shoulders were broader than Jake's, his voice lower, and when he made rude remarks, they came from a mouth that had earned the right to make them. He was tall and walked with confidence, never in a rush."
+        "target_sprite":"res://art/girl.png",
+        "content":"Amy hated learning French with a passion, who needs to give a window a gender? \nBut she liked the idea of knowing the language. French was a sexy language. She imagined she could seduce someone a bit more sophisticated than Jake by whispering something French in his ear. \n[color=red]She could seduce someone older.[/color] Someone a lot older.",
+
     },
     {
         "level":5,
-        "target_sprite":"res://art/question.png",
-        "content":"Her secret wore aftershave, not Lynx, and he drove a car, not a bike. Unlike Jake's sandy curtains, he had thick, dark hair. A man's cut. She had seen through his shirts that there was dark hair in the shallow dip at the centre of his chest. Her secret had a tall, dark shadow.\nWhen Amy thought about him, her nerves exploded and her head filled with a bright white sound that shut out any sense."
-    }
-    ,
-    {
-        "level":6,
-        "target_sprite":"res://art/girl.png",
-        "content":"Amy knew that he would have to stay a secret, and a short-lived one at that. A comma in her story, nothing more. She knew that she should keep it all locked in a box; perfect, complete, private, totally separate from the rest of her soundtrack.\nThat kiss in the kitchen, with the sounds of the others right outside. His hands on her face, a tickle of stubble that she'd never felt before. That one tiny kiss that kept her awake at night. "
+        "target_sprite":"res://art/boy.png",
+        "content":"She loved Jake, of course, she meant it when she said it. \nShe had his name carefully stencilled onto her bag with a Tippex pen and when she imagined the future, he was in it. But over the last few weeks she had begun to see the differences between them more and more.\nJake, with his wide smile and deep brown puppy-dog eyes, was so easy to spend time with, [color=red]so gentle[/color]. But in the time they'd been going out, he'd barely plucked up the courage to put his hand inside her school shirt. They spent whole lunch hours kissing in the top field, and one time he'd climbed on top of her but she'd got a dead leg and had to move and he was so flustered he barely spoke for the rest of the day.",
+        "is_end":true,
     },
     
     

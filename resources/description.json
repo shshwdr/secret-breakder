@@ -21,6 +21,13 @@
     },
     "Brick_lurch":{
         "content":"Lurch, a demon. it would damage you periodically if not destroyed",
-    }
+    },
+    "Brick_seduce":{
+        "content":"Lust, a demon. it would buff up other demon's attack while alive",
+    },
+    "Brick_coward":{
+        "content":"Coward, a demon. When other demon are destroyed, its attack will decrease",
+    },
+    
     
 }

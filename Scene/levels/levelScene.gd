@@ -31,14 +31,25 @@ func has_monster_except(excepts):
 			if not excepts.has(brick.monster_type):
 				return true
 	return false
+	
+func has_monster_by_type(type):
+	for brick in bricks.get_children():
+		if brick.get("is_monster") and not brick.is_dead:
+			if brick.monster_type == type:
+				return true
+	return false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		if event.scancode == KEY_0:
+			_on_Button_pressed()
 
 func _on_Button_pressed():
 	Utils.is_game_paused = false
-	LevelManager.level_up()
-	get_tree().change_scene("res://Scene/levels/level"+String(LevelManager.current_level)+".tscn")
+	var change_scene = LevelManager.level_up()
+	get_tree().change_scene(change_scene)
 	pass # Replace with function body.

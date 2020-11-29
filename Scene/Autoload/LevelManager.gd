@@ -30,7 +30,12 @@ func _process(delta):
 	pass
 	
 func level_up():
-	current_level+=1
+	unlocked_level = max(unlocked_level,current_level+1)
+	if get_level_info().get("is_end"):
+		return "res://Scene/main_game.tscn"
+	else:
+		current_level+=1
+		return "res://Scene/levels/level"+String(LevelManager.current_level)+".tscn"
 	
 	
 func start_level():

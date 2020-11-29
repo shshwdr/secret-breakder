@@ -5,7 +5,8 @@ extends "res://Scene/Object/bricks/Brick_monster.gd"
 var attack_debuff = 0
 
 func get_attack():
-	return max(1,attack - attack_debuff)
+	var res = .get_attack()
+	return max(1,res - attack_debuff)
 
 func on_brick_die(brick):
 	attack_debuff+=1

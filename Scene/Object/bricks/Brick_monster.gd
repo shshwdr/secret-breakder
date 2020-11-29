@@ -15,7 +15,13 @@ func get_health():
 	return health
 	
 func get_attack():
-	return attack
+	if not Utils.levelgame:
+		return 0
+	var res = attack
+	#seduce add
+	if Utils.levelgame.has_monster_by_type("seduce"):
+		res+=1
+	return res
 
 func update_UI():
 	attack_label.text = String(get_attack())

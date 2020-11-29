@@ -4,7 +4,7 @@
 [ext_resource path="res://Scene/Object/bricks/brick.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scene/Object/bricks/Brick_monster.gd" type="Script" id=3]
 
-[sub_resource type="Shader" id=6]
+[sub_resource type="Shader" id=11]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -23,7 +23,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 6 )
+shader = SubResource( 11 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_monster" instance=ExtResource( 2 )]

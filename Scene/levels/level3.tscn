@@ -26,7 +26,7 @@ resource_local_to_scene = true
 shader = SubResource( 1 )
 shader_param/changeColorRatio = 0.0
 
-[sub_resource type="Shader" id=9]
+[sub_resource type="Shader" id=3]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -45,12 +45,12 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=4]
 resource_local_to_scene = true
-shader = SubResource( 9 )
+shader = SubResource( 3 )
 shader_param/changeColorRatio = 0.0
 
 [sub_resource type="ShaderMaterial" id=5]
 resource_local_to_scene = true
-shader = SubResource( 9 )
+shader = SubResource( 3 )
 shader_param/changeColorRatio = 0.0
 
 [sub_resource type="Shader" id=6]
