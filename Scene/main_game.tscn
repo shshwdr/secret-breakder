@@ -58,12 +58,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Web_mone_label" type="Label" parent="Control/character_selection/character_selection"]
+[node name="Web_mone_label" type="RichTextLabel" parent="Control/character_selection/character_selection"]
 margin_top = 128.0
 margin_right = 352.0
 margin_bottom = 160.0
-text = "You've unlocked some characters, join COIL to use them and support the game!"
-autowrap = true
+bbcode_enabled = true
 
 [node name="confirm" type="Button" parent="Control/character_selection/character_selection"]
 margin_left = 288.0

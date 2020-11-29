@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scene/Object/bricks/Brick_target.tscn" type="PackedScene" id=1]
-[ext_resource path="res://art/alex.png" type="Texture" id=2]
 [ext_resource path="res://Scene/Object/Shooter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scene/UI.gd" type="Script" id=7]
 [ext_resource path="res://Scene/levels/levelScene.gd" type="Script" id=8]
@@ -123,5 +122,4 @@ width = 5.0
 [node name="character" type="Sprite" parent="."]
 position = Vector2( 32, 320 )
 scale = Vector2( 2, 2 )
-texture = ExtResource( 2 )
 [connection signal="pressed" from="level_ending/ColorRect/Button" to="." method="_on_Button_pressed"]

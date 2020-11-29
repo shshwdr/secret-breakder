@@ -9,6 +9,7 @@ func reparent(node,new_parent):
   new_parent.add_child(node) 
 
 var ball_scene = preload("res://Scene/Object/Ball.tscn")
+var smaller_ball_scene = preload("res://Scene/Object/smaller_ball.tscn")
 var ball_instance
 func _process(delta):
 	if Utils.is_game_paused:
@@ -19,7 +20,10 @@ func _process(delta):
 	if Input.is_action_just_pressed("left_mouse"):
 		#reparent(ball_instance,Utils.levelgame.bullets)
 		Events.emit_signal("shoot_ball")
-		ball_instance = ball_scene.instance()
+		if Utils.selected_character and Utils.selected_character.name == "Amy":
+			ball_instance = smaller_ball_scene.instance()
+		else:
+			ball_instance = ball_scene.instance()
 		Utils.levelgame.bullets.add_child(ball_instance)
 		ball_instance.position = shooting_point.global_position
 #		var test:RigidBody2D = ball_instance.rigidbody

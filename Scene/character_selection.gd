@@ -8,11 +8,11 @@ onready var ability_desc = $ability_description
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if WebMonetization.is_paying():
-		web_mono_label.text = "Thanks for support us with web monetization! You can select a character that is unlocked!"
+		web_mono_label.bbcode_text = "Thanks for support us with web monetization! You can select a character now!"
 		web_mono_label.rect_size = Vector2(352,32)
 		$join_coil.visible = false
 	else:
-		web_mono_label.text = "You've unlocked some characters, join COIL to use them and support the game!"
+		web_mono_label.bbcode_text = "You've unlocked some characters, join [color=yellow]coil[/color] to use them and support the game!"
 		web_mono_label.rect_size = Vector2(288,32)
 		$join_coil.visible = true
 		

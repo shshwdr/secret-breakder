@@ -17,7 +17,8 @@ func level_end():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$character.texture = load(Utils.selected_character.sprite)
+	if Utils.selected_character and Utils.selected_character.sprite:
+		$character.texture = load(Utils.selected_character.sprite)
 	LevelManager.current_level = current_level
 	Utils.levelgame = self
 	for brick in bricks.get_children():
