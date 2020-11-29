@@ -22,6 +22,7 @@ __meta__ = {
 }
 
 [node name="character_selection" type="ColorRect" parent="Control"]
+visible = false
 margin_right = 352.0
 margin_bottom = 352.0
 color = Color( 1, 1, 1, 0.45098 )

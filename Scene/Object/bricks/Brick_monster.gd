@@ -41,13 +41,18 @@ func _ready():
 func do_damage():
 	Utils.attack_player(get_attack())
 
-func collide_with_ball(ball):
-	health -= Utils.get_player_attack()
+func check_death():
 	if health<=0:
 		is_dead = true
 		Events.emit_signal("brick_die",self)
 		queue_free()
-		return
+		return true
+	return false
+
+func collide_with_ball(ball):
+	Events.emit_signal("get_hit_by_ball",self)
+	health -= Utils.get_player_attack()
+	check_death()
 	
 	var ratio = (max_health - health) / float(max_health - 1)
 	sprite.material.set_shader_param("changeColorRatio",ratio)

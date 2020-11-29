@@ -28,6 +28,9 @@
     "Brick_coward":{
         "content":"Coward, a demon. When other demon are destroyed, its attack will decrease",
     },
+    "Brick_dying":{
+        "content":"Dying, a demon. When other demon are hit, its health will decrease",
+    }
     
     
 }

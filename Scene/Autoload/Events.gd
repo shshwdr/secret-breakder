@@ -11,3 +11,4 @@ signal brick_die(brick)
 signal shoot_ball()
 
 signal update_select_character()
+signal get_hit_by_ball(brick)

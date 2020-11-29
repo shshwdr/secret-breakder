@@ -79,4 +79,5 @@ left_mouse={
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.848387, 0.984375, 0.768394, 1 )
 environment/default_environment="res://default_env.tres"
