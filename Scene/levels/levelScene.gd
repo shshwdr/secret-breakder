@@ -58,3 +58,7 @@ func _on_Button_pressed():
 	var change_scene = LevelManager.level_up()
 	get_tree().change_scene(change_scene)
 	pass # Replace with function body.
+
+
+func _on_Button2_pressed():
+	get_tree().change_scene("res://Scene/main_game.tscn")

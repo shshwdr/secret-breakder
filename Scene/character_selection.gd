@@ -17,7 +17,7 @@ func _ready():
 		$join_coil.visible = true
 		
 	
-	var file_path = '%s/%s.json' % ["resources", "character"]
+	var file_path = '%s/%s.json' % ["res://resources", "character"]
 	var characters_info = Utils.load_json(file_path)
 		
 	for character in characters_info:
@@ -39,7 +39,7 @@ func update_select_character():
 
 
 func _on_confirm_pressed():
-	
+	Utils.update_player_health()
 	get_tree().change_scene("res://Scene/levels/level"+String(Utils.maingame.selected_level)+".tscn")
 
 

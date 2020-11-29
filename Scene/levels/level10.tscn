@@ -136,8 +136,6 @@ position = Vector2( 160, 32 )
 material = SubResource( 15 )
 position = Vector2( 192, 0 )
 
-[node name="Brick_dejavu" parent="bricks" index="8" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu" parent="bricks" index="8" instance=ExtResource( 2 )]
 material = SubResource( 16 )
 position = Vector2( 160, 64 )

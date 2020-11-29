@@ -12,7 +12,7 @@ onready var hbox = $Control/HBoxContainer
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Utils.maingame = self
-	var file_path = '%s/%s.json' % ["resources", "stage"]
+	var file_path = '%s/%s.json' % ["res://resources", "stage"]
 	stage_info = Utils.load_json(file_path)
 	
 	for character in stage_info:
@@ -34,10 +34,3 @@ func _on_join_coil_pressed():
 	
 	OS.shell_open("https://coil.com/")
 
-
-#func _on_cancel_pressed():
-#	queue_free()
-#
-#
-#func _on_confirm_pressed():
-#	get_tree().change_scene("res://Scene/levels/level"+String(Utils.maingame.selected_level)+".tscn")

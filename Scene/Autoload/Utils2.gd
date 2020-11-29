@@ -7,6 +7,9 @@ var player_health = 100
 var player_attack = 1
 var is_game_paused = false
 
+func update_player_health():
+	player_health = player_max_health
+
 func get_player_attack():
 	return player_attack
 
@@ -14,7 +17,7 @@ func attack_player(minus):
 	player_health-=minus
 	player_health = min(player_max_health, player_health)
 	if player_health<=0:
-		print("game end")
+		get_tree().change_scene("res://Scene/main_game.tscn")
 	Events.emit_signal("update_health")
 
 var half_tile_size = Vector2(tile_length/2,tile_length/2)

@@ -187,63 +187,43 @@ material = SubResource( 5 )
 material = SubResource( 7 )
 position = Vector2( 224, 0 )
 
-[node name="Brick_dying" parent="bricks" index="7" groups=[
-"brick",
-] instance=ExtResource( 3 )]
+[node name="Brick_dying" parent="bricks" index="7" instance=ExtResource( 3 )]
 material = SubResource( 8 )
 position = Vector2( 128, 0 )
 
-[node name="Brick_dying2" parent="bricks" index="8" groups=[
-"brick",
-] instance=ExtResource( 3 )]
+[node name="Brick_dying2" parent="bricks" index="8" instance=ExtResource( 3 )]
 material = SubResource( 9 )
 position = Vector2( 160, 32 )
 
-[node name="Brick_dying3" parent="bricks" index="9" groups=[
-"brick",
-] instance=ExtResource( 3 )]
+[node name="Brick_dying3" parent="bricks" index="9" instance=ExtResource( 3 )]
 material = SubResource( 10 )
 position = Vector2( 192, 0 )
 
-[node name="Brick_dejavu" parent="bricks" index="10" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu" parent="bricks" index="10" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 96, 160 )
 
-[node name="Brick_dejavu5" parent="bricks" index="11" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu5" parent="bricks" index="11" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 224, 160 )
 
-[node name="Brick_dejavu2" parent="bricks" index="12" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu2" parent="bricks" index="12" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 256, 128 )
 
-[node name="Brick_dejavu3" parent="bricks" index="13" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu3" parent="bricks" index="13" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 64, 128 )
 
-[node name="Brick_dejavu4" parent="bricks" index="14" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu4" parent="bricks" index="14" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 96, 96 )
 
-[node name="Brick_dejavu6" parent="bricks" index="15" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu6" parent="bricks" index="15" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 224, 96 )
 
-[node name="Brick_dejavu7" parent="bricks" index="16" groups=[
-"brick",
-] instance=ExtResource( 2 )]
+[node name="Brick_dejavu7" parent="bricks" index="16" instance=ExtResource( 2 )]
 material = SubResource( 11 )
 position = Vector2( 224, 96 )
 
