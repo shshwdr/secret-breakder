@@ -17,6 +17,7 @@ func level_end():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$character.texture = load(Utils.selected_character.sprite)
 	LevelManager.current_level = current_level
 	Utils.levelgame = self
 	for brick in bricks.get_children():
@@ -44,7 +45,7 @@ func has_monster_by_type(type):
 #	pass
 
 func _input(event):
-	if event is InputEventKey and event.pressed:
+	if DebugSetting.can_jump_level and event is InputEventKey and event.pressed:
 		if event.scancode == KEY_0:
 			_on_Button_pressed()
 

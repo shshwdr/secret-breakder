@@ -36,27 +36,27 @@
     
     
     {
-        "level":10,
+        "level":6,
         "target_sprite":"res://art/alex.png",
         "content":"[color=red]Alex Dale[/color] had written about premature babies, their seconds-long lives as fragile as a pile of gold dust.\nShe had written about degenerative diseases and machine-dependents whose futures lay in the idle flick of a button. She had even detailed every knife-twist of her own mother's demise, but these patients in front of her were experiencing a very different living death."
     },
     {
-        "level":11,
+        "level":7,
         "target_sprite":"res://art/nurse.png",
         "content":"'For years patients like this were all written off,' said the auburn-haired ward manager with the deepest crow's feet Alex had ever seen. 'They used to be called [color=red]vegetables[/color].' She paused and sighed. 'A lot of people still call them that.'\nAlex nodded, using scrappy shorthand to record the conversation in her Moleskine pad.\nThe ward manager continued. 'But the thing is, they're not all the same and they shouldn't be written off. They're individuals. Some of them are completely lacking awareness, but others are [color=red]actually minimally conscious[/color], and that's a world apart from being brain dead.'"
     },
     {
-        "level":12,
+        "level":8,
         "target_sprite":"res://art/alex.png",
         "content":"Alex was shown around the ward. Most of the patients were at least middle-aged but the cubicle in the corner had a queasy sense of youth."
     },
     {
-        "level":13,
+        "level":9,
         "target_sprite":"res://art/amy.png",
         "content":"As soon as Alex let her eyes fall on the full flesh of the woman's face, she recoiled.\n[color=red]Alex knew this woman."
     },
     {
-        "level":14,
+        "level":10,
         "target_sprite":"res://art/alex.png",
         "content":"Alex span to look at her guide. 'Is this..?'\n'Yes it is. I wondered if you'd recognise her. You must have been very young.'\n'[color=red]I was the same age.[/color] I mean, I am the same age.'"
     },

@@ -9,3 +9,5 @@ signal update_health()
 signal brick_die(brick)
 
 signal shoot_ball()
+
+signal update_select_character()

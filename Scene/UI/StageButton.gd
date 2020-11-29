@@ -13,4 +13,6 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://Scene/levels/level"+String(start_level)+".tscn")
+	Utils.maingame.selected_level = start_level
+	Utils.maingame.character_selection.visible = true
+	Utils.maingame.character_selection_inner.update_select_character()

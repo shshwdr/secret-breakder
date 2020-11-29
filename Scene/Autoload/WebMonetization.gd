@@ -26,7 +26,7 @@ func _on_poll_timeout() -> void:
 		_paying = false
 		
 func is_paying() -> bool:
-	return _paying
+	return DebugSetting.web_monetization_force_on or _paying
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

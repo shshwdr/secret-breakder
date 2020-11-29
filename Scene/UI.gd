@@ -5,6 +5,7 @@ onready var health_label = $health
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	on_update_health()
 	Events.connect("update_health",self,"on_update_health")
 
 func on_update_health():

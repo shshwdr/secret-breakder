@@ -1,0 +1,20 @@
+[
+    {
+        "name":"None",
+        "sprite":"res://art/tile_cover_unrevealable.png",
+        "required_level":0,
+        "description":"Nothing special happened"
+    },
+    {
+        "name":"Amy",
+        "sprite":"res://art/girl.png",
+        "required_level":6,
+        "description":"Young Amy is petite and the ball she shoot is tiny"
+    },
+    {
+        "name":"Alex",
+        "sprite":"res://art/alex.png",
+        "required_level":11,
+        "description":"Alex is a sensitive reporter, so she can estimate the first position that ball will touch"
+    },
+]

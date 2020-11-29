@@ -20,6 +20,7 @@ func attack_player(minus):
 var half_tile_size = Vector2(tile_length/2,tile_length/2)
 var rng:RandomNumberGenerator = RandomNumberGenerator.new()
 var maingame
+var selected_character
 var levelgame
 var moon
 var game_root
