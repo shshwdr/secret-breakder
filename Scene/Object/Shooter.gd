@@ -1,7 +1,8 @@
 extends Node2D
 
 onready var shooting_point = $shootingPoint
-
+onready var raycast = $RayCast2D
+onready var line = $Line2D
 export var ball_speed = 300
 
 func reparent(node,new_parent):
@@ -16,6 +17,18 @@ func _process(delta):
 		return
 	var mouse_position = get_global_mouse_position()
 	look_at(mouse_position)
+	
+	
+	#hint line
+	if Utils.selected_character and Utils.selected_character.name == "Alex":
+		line.visible = true
+		var collider = raycast.get_collider()
+		if collider:
+			var dis = raycast.get_collision_point() .distance_to( position)
+			line.scale = Vector2(dis/float(700),1)
+	else:
+		line.visible = false
+	
 	#if shooting_point.get_child_count()==0:
 	if Input.is_action_just_pressed("left_mouse"):
 		#reparent(ball_instance,Utils.levelgame.bullets)

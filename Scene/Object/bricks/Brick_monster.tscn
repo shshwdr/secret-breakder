@@ -96,14 +96,12 @@ description = "A monster, if you hit it, it would hit back(if it is alive"
 max_health = 2
 
 [node name="ghost" parent="." index="0"]
-modulate = Color( 1, 1, 1, 0.360723 )
+modulate = Color( 1, 1, 1, 0.341176 )
 material = SubResource( 13 )
-scale = Vector2( 1.66818, 1.66818 )
 texture = ExtResource( 1 )
 
 [node name="sprite" parent="." index="1"]
 material = SubResource( 2 )
-scale = Vector2( 1.3365, 1.3365 )
 texture = ExtResource( 1 )
 
 [node name="attack" type="Label" parent="." index="2"]

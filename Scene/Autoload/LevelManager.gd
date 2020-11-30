@@ -6,7 +6,7 @@ var level_folder = "res://resources"
 
 var level_jump_height = 20
 
-var unlocked_level = 10
+var unlocked_level = 21
 
 var LEVEL_SAVE_KEY = "levels"
 var FINISH_SAVE_KEY = "finished"
