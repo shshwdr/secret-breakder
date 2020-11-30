@@ -27,7 +27,7 @@ resource_local_to_scene = true
 shader = SubResource( 1 )
 shader_param/changeColorRatio = 0.0
 
-[sub_resource type="Shader" id=12]
+[sub_resource type="Shader" id=3]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -44,9 +44,9 @@ void fragment() {
 	}
 }"
 
-[sub_resource type="ShaderMaterial" id=13]
+[sub_resource type="ShaderMaterial" id=4]
 resource_local_to_scene = true
-shader = SubResource( 12 )
+shader = SubResource( 3 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_seduce" instance=ExtResource( 1 )]
@@ -57,7 +57,7 @@ max_health = 1
 monster_type = "seduce"
 
 [node name="ghost" parent="." index="0"]
-material = SubResource( 13 )
+material = SubResource( 4 )
 
 [node name="sprite" parent="." index="1"]
 material = SubResource( 2 )
