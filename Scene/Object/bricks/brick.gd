@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 onready var sprite = $sprite
+onready var ghost = $ghost
 onready var label_node = $Node2D
 onready var label = $Node2D/Label
 export var description = "A brick, hit it once to destroy it."
@@ -13,6 +14,7 @@ func _ready():
 	var script_name = script_path.substr(length1, length2)
 	#print("name ",script_name)
 	label.text = ResourceManager.descriptions[script_name].content
+	ghost.texture = sprite.texture
 	#label
 	#label.text = description
 

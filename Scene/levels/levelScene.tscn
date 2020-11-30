@@ -161,6 +161,6 @@ volume_db = -6.0
 
 [node name="win_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
-volume_db = -12.0
+volume_db = -8.0
 [connection signal="pressed" from="level_ending/ColorRect/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

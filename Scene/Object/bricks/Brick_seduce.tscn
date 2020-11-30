@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scene/Object/bricks/Brick_monster.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Object/bricks/Brick_seduce.gd" type="Script" id=2]
 [ext_resource path="res://art/lust.png" type="Texture" id=3]
+[ext_resource path="res://sound/fx/240355__sonidotv__punch-5.wav" type="AudioStream" id=4]
 
-[sub_resource type="Shader" id=11]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -23,7 +24,29 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 11 )
+shader = SubResource( 1 )
+shader_param/changeColorRatio = 0.0
+
+[sub_resource type="Shader" id=12]
+code = "shader_type canvas_item;
+
+uniform float changeColorRatio;
+
+void fragment() {
+	bool condition = UV.y<changeColorRatio;
+	if (condition){
+    	COLOR = texture(TEXTURE, UV);
+		//COLOR.r = 1.0;
+		COLOR.g = 0.0;
+		COLOR.b =0.0;
+	}else{
+		COLOR = texture(TEXTURE, UV);
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=13]
+resource_local_to_scene = true
+shader = SubResource( 12 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_seduce" instance=ExtResource( 1 )]
@@ -33,6 +56,12 @@ description = "A brick, hit it once to destroy it."
 max_health = 1
 monster_type = "seduce"
 
-[node name="sprite" parent="." index="0"]
+[node name="ghost" parent="." index="0"]
+material = SubResource( 13 )
+
+[node name="sprite" parent="." index="1"]
 material = SubResource( 2 )
 texture = ExtResource( 3 )
+
+[node name="damage_sound" parent="." index="6"]
+stream = ExtResource( 4 )

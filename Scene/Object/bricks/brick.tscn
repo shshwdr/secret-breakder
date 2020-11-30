@@ -4,7 +4,7 @@
 [ext_resource path="res://art/tile_cover_revealable.png" type="Texture" id=2]
 [ext_resource path="res://Scene/Object/bricks/brick.gd" type="Script" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 16 )
 
 [node name="Brick" type="KinematicBody2D" groups=[
@@ -13,6 +13,11 @@ extents = Vector2( 16, 16 )
 material = ExtResource( 1 )
 script = ExtResource( 3 )
 
+[node name="ghost" type="Sprite" parent="."]
+material = ExtResource( 1 )
+position = Vector2( 16, 16 )
+texture = ExtResource( 2 )
+
 [node name="sprite" type="Sprite" parent="."]
 material = ExtResource( 1 )
 position = Vector2( 16, 16 )
@@ -20,7 +25,7 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 16, 16 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="Control" type="Control" parent="."]
 margin_right = 32.0
