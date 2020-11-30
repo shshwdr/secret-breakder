@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://art/pain.png" type="Texture" id=1]
 [ext_resource path="res://Scene/Object/bricks/brick.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scene/Object/bricks/Brick_monster.gd" type="Script" id=3]
+[ext_resource path="res://sound/fx/318318__michael-klier__large-monster-grunt-hit-02 (1).wav" type="AudioStream" id=4]
 
-[sub_resource type="Shader" id=11]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
 uniform float changeColorRatio;
@@ -23,7 +24,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
-shader = SubResource( 11 )
+shader = SubResource( 1 )
 shader_param/changeColorRatio = 0.0
 
 [node name="Brick_monster" instance=ExtResource( 2 )]
@@ -64,3 +65,9 @@ valign = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="damage_sound" type="AudioStreamPlayer2D" parent="." index="6"]
+stream = ExtResource( 4 )
+volume_db = -6.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="7"]

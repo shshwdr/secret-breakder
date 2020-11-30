@@ -7,6 +7,8 @@ signal game_end()
 
 signal update_health()
 signal brick_die(brick)
+signal heal()
+signal win()
 
 signal shoot_ball()
 

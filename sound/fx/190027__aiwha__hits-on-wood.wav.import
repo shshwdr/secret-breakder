@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/190027__aiwha__hits-on-wood.wav-c166b7bf19917831a1aec328d6003326.sample"
+
+[deps]
+
+source_file="res://sound/fx/190027__aiwha__hits-on-wood.wav"
+dest_files=[ "res://.import/190027__aiwha__hits-on-wood.wav-c166b7bf19917831a1aec328d6003326.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

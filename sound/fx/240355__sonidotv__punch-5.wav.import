@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/240355__sonidotv__punch-5.wav-fa028965ea53e52000450cc4e109c41f.sample"
+
+[deps]
+
+source_file="res://sound/fx/240355__sonidotv__punch-5.wav"
+dest_files=[ "res://.import/240355__sonidotv__punch-5.wav-fa028965ea53e52000450cc4e109c41f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

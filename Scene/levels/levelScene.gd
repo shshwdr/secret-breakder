@@ -29,6 +29,19 @@ func _ready():
 	target.sprite.texture = load(LevelManager.get_level_info().target_sprite)
 	
 	ending_texture.texture = load(LevelManager.get_level_info().target_sprite)
+	
+	Events.connect("brick_die",self,"on_brick_die")
+	Events.connect("heal",self,"on_heal")
+	
+	Events.connect("win",self,"on_win")
+
+func on_brick_die(brick):
+	$die_sound.play()
+	
+func on_heal():
+	$heal_sound.play()
+func on_win():
+	$win_sound.play()
 
 func has_monster_except(excepts):
 	for brick in bricks.get_children():

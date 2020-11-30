@@ -7,6 +7,7 @@ func get_heal_value():
 
 func collide_with_ball(ball):
 	Utils.attack_player(-get_heal_value())
+	Events.emit_signal("heal")
 	queue_free()
 	
 

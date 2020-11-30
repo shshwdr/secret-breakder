@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scene/Object/bricks/Brick_target.tscn" type="PackedScene" id=1]
 [ext_resource path="res://art/girl_close_eye.png" type="Texture" id=2]
 [ext_resource path="res://Scene/Object/Shooter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sound/fx/ouch.wav" type="AudioStream" id=4]
+[ext_resource path="res://sound/fx/518800__silverillusionist__healing-2-tranquillity.wav" type="AudioStream" id=5]
+[ext_resource path="res://sound/fx/258142__tuudurt__level-win.wav" type="AudioStream" id=6]
 [ext_resource path="res://Scene/UI.gd" type="Script" id=7]
 [ext_resource path="res://Scene/levels/levelScene.gd" type="Script" id=8]
 
@@ -147,5 +150,17 @@ text = "Back"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="die_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -6.0
+
+[node name="heal_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -6.0
+
+[node name="win_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = -12.0
 [connection signal="pressed" from="level_ending/ColorRect/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

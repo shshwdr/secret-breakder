@@ -127,11 +127,15 @@ current_level = 5
 [node name="Brick_target" parent="bricks" index="0"]
 material = SubResource( 2 )
 
-[node name="Brick_seduce" parent="bricks" index="1" instance=ExtResource( 3 )]
+[node name="Brick_seduce" parent="bricks" index="1" groups=[
+"brick",
+] instance=ExtResource( 3 )]
 material = SubResource( 4 )
 position = Vector2( 96, 0 )
 
-[node name="Brick_seduce2" parent="bricks" index="2" instance=ExtResource( 3 )]
+[node name="Brick_seduce2" parent="bricks" index="2" groups=[
+"brick",
+] instance=ExtResource( 3 )]
 material = SubResource( 4 )
 position = Vector2( 224, 0 )
 

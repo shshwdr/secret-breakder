@@ -101,7 +101,9 @@ shader_param/changeColorRatio = 0.0
 [node name="level" instance=ExtResource( 1 )]
 current_level = 6
 
-[node name="Brick_dying" parent="bricks" index="0" instance=ExtResource( 5 )]
+[node name="Brick_dying" parent="bricks" index="0" groups=[
+"brick",
+] instance=ExtResource( 5 )]
 material = SubResource( 12 )
 position = Vector2( 160, 32 )
 

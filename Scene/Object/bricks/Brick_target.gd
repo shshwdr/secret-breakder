@@ -4,6 +4,7 @@ extends "res://Scene/Object/bricks/brick.gd"
 # var a = 2
 # var b = "text"
 func collide_with_ball(ball):
+	Events.emit_signal("win")
 	Utils.levelgame.level_end()
 
 

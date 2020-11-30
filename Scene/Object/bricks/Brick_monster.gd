@@ -40,6 +40,7 @@ func _ready():
 
 
 func do_damage():
+	$damage_sound.play()
 	Utils.attack_player(get_attack())
 
 func check_death():

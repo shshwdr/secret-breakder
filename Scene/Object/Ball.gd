@@ -9,6 +9,7 @@ func _physics_process(delta):
 	for body in bodies:
 		if body.is_in_group("brick"):
 			body.collide_with_ball(self)
+			$AudioStreamPlayer2D.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
